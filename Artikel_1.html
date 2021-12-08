@@ -1,0 +1,75 @@
+<!doctype=html>
+<html lang="id">
+<head>
+	<title>Tips Mengatasi Error Java: JDBC - SQL Server</title>
+	<link rel="stylesheet" href="Stylesheet.css">
+</head>
+
+<Body>
+	<div id="banner"><!--
+	-->
+	<img id="logo" src="images/placeholder.png" alt="logo">
+		<div id="contact">Ada saran tips yang harus dibahas?<br>
+			Hubungi kami di: contact@tkp.co.id
+			</div>
+		</div>
+	<div id="TopNavigation">
+		<a class="navButton" href="Halaman_Utama.html">Halaman Utama</a>
+		<a class="navButton" href="Daftar_artikel.html">Daftar artikel
+		</a>
+	</div>
+	<div id="mainbody">
+		<div id="Content">
+			<h1>Tips Mengatasi Error Java: JDBC - SQL Server</h1>
+			<p>Salah satu error yang mungkin ditemui saat mencoba menggunakan
+			jdbc untuk menghubungkan antara sebuah aplikasi java dengan
+			sebuah database adalah "Cannot open database. Login failed."
+			</p>
+			<img class="articleimg" src="images/artikeljava1.png" alt="gambar1">
+			<p>Error seperti ini dapat disebabkan karena beberapa hal, diantaranya yaitu:
+			<ol>
+				<li>Kesalahan nama database.
+				</li>
+				Periksa kembali pada bagian nama database dalam kode apakah sudah benar atau tidak.
+				<li>Kesalahan Username/password
+				</li>
+				Periksa kembali apakah username dan password yang digunakan sudah tepat. Apabila sudah tepat maka periksa melalui SQL Server Management Studio (SSMS) bahwa login dan user tersebut telah dibuat untuk database yang ingin diakses tersebut. Login
+				dan user pada SQL server memiliki fungsi yang berbeda, login digunakan untuk authorisasi sql server sedangkan user digunakan untuk dapat mengakses database tertentu. Sebuah login perlu dibuatkan user di database yang ingin diakses.
+			</ol>
+			</p>
+			<h2>Menambahkan Login dan User</h2>
+			<p>Apabila menemui masalah pada poin kedua tersebut. Maka
+			langkah untuk menambahkan login dan user pada SQL server dapat dilakukan dengan mudah dengan membuat query create login dan create user seperti pada gambar di bawah ini:
+			<img class="articleimg" src="images/artikeljava2.png" alt="gambar2">
+			"java" pada query create login dan create user dapat diganti dengan nama login yang diinginkan. Nama login dan user dapat berbeda dan tidak harus sama.Lebih lengkapnya dapat dilihat pada 
+			<a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/create-login-transact-sql?view=sql-server-ver15">dokumentasi ini</a>
+			 dan <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/create-user-transact-sql?view=sql-server-ver15">ini</a>
+			</p>
+		</div>
+		<div id="sideNav">
+			<ul>
+				<li>
+					<a href="Halaman_Utama.html"> Halaman Utama</a>
+					</li>
+				<li>
+					<a href="Daftar_Artikel.html"> Artikel</a>
+				</li>
+				<ul class="secondlevel">
+					<li>
+						<a href="Artikel_1.html"> Error Java: jdbc - SQL Server</a>
+					</li>
+					<li>
+						<a href="Artikel_2.html"> Artikel 2</a>
+					</li>
+			</ul>
+		
+		</div>
+	</div>
+	<footer>
+		<p>
+		Kelompok 2 IMK<br>
+		Hubungi Kami:<br>
+		No Telp: 12345678910<br>
+		Email  : contact@tkp.co.id<br>
+	</footer>
+</body>

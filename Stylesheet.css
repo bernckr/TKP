@@ -1,0 +1,84 @@
+#banner{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960;
+	background-color: #A5CBC3;
+	
+}
+#topNavigation{
+	background-color: #A5AAD4;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960;
+	font-size: 27;
+}
+
+#contact{
+	float: right;
+	height:110;
+	vertical-align: middle;
+	padding-top:70;
+	padding-right: 10;
+	/*color: #FFFFFF;*/
+}
+
+#mainbody{
+	width: 960;
+	margin-left:auto;
+	margin-right: auto;
+	/*margin-top: -16;
+	background-color: #B2BEB5;*/
+	vertical-align: top;
+}
+
+#content{
+	width: 66%;
+	/*background-color: #FFFFFF;*/
+	float:left;
+	padding-left:20;
+}
+
+
+#sidenav{
+	margin-left:66%;
+	padding-top:20;
+	padding-right:20;
+	padding-bottom:20;
+	width: 280;
+	/*background-color: #3b341f;*/
+	text-align: top;
+}
+#logo{
+
+	width:220;
+	height:110;  
+}
+
+footer{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960;
+	padding-top:20;
+	padding-bottom:20;
+	text-align:center;
+	background-color: #A5CBC3;
+	
+}
+.navbutton{
+	padding-left: 18px;
+	text-decoration: none;
+}
+
+.secondlevel{
+	list-style:square;
+}
+.articleimg{
+	width:640;
+}
+
+body {
+	background: #EFFFC8;
+	min-width: 960;
+}
+
