@@ -38,6 +38,13 @@
 	padding-left:20;
 }
 
+#content_2{
+	width: 100%;
+	/*background-color: #FFFFFF;*/
+	float:left;
+	padding-left:20;
+}
+
 
 #sidenav{
 	margin-left:66%;
