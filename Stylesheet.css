@@ -2,11 +2,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 960;
-	background-color: #A5CBC3;
+	background-color: #5584AC;
 	
 }
 #topNavigation{
-	background-color: #A5AAD4;
+	background-color: #22577E;
 	margin-left: auto;
 	margin-right: auto;
 	width: 960;
@@ -70,7 +70,7 @@ footer{
 	padding-top:20;
 	padding-bottom:20;
 	text-align:center;
-	background-color: #A5CBC3;
+	background-color: #22577E;
 	
 }
 .navbutton{
@@ -86,7 +86,7 @@ footer{
 }
 
 body {
-	background: #EFFFC8;
+	background: #95D1CC;
 	min-width: 960;
 }
 
