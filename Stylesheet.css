@@ -73,10 +73,32 @@ footer{
 	background-color: #22577E;
 	
 }
+
 .navbutton{
 	padding-left: 18px;
 	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: normal;
 }
+a.navbutton: link{
+	padding-left: 18px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+a.navbutton: visited{
+	padding-left: 18px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+a.navbutton: active{
+	padding-left: 18px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
 
 .secondlevel{
 	list-style:square;
