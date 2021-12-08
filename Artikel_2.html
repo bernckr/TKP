@@ -1,0 +1,100 @@
+<!doctype=html>
+<html lang="id">
+<head>
+	<title>Tips Error Java: jdbc - TCP/IP connection has failed</title>
+	<link rel="stylesheet" href="Stylesheet.css">
+</head>
+
+<Body>
+	<div id="banner"><!--
+	-->
+	<img id="logo" src="images/placeholder.png" alt="logo">
+		<div id="contact">Ada saran tips yang harus dibahas?<br>
+			Hubungi kami di: contact@tkp.co.id
+			</div>
+		</div>
+	<div id="TopNavigation">
+		<a class="navButton" href="Halaman_Utama.html">Halaman Utama</a>
+		<a class="navButton" href="Daftar_artikel.html">Daftar artikel
+		</a>
+	</div>
+	<div id="mainbody">
+		<div id="Content">
+			<h1>Tips Error Java: jdbc - TCP/IP connection has failedr</h1>
+			<p>Salah satu error yang mungkin ditemui saat mencoba menggunakan
+			jdbc untuk menghubungkan antara sebuah aplikasi java dengan
+			sebuah database adalah "The TCP/IP connection has failed".
+			</p>
+			<img class="articleimg" src="images/artikel2_java_img1.png" alt="gambar1">
+			<p>Error ini dapat disebabkan karena beberapa hal, diantaranya yaitu:
+			<ol>
+				<li>Services SQL server belum menyala.
+				</li>
+				<li>Konfigurasi TCP/IP SQL server pada kondisi disabled.
+				</li>
+				<li>Mode authentikasi SQL server belum dinyalakan.
+				</li>
+				<li>Port number yang digunakan tidak tepat.
+				</li>
+			</ol>
+			</p>
+			Untuk mengatasi masalah-masalah tersebut ikuti tips-tips berikut.
+			
+			<h2>Services belum menyala</h2>
+			<p>Untuk memeriksa apakah masalah yang ditemui adalah ini,
+			pertama-tama bukalah Task Manager. Lalu carilah proses SQL Server, apabila tidak ada maka service SQL server belum dinyalakan.<br>
+			<img class="articleimg" src="images/artikel2_java_img2.png" alt="gambar2">
+			<br><br>
+			Maka dari itu untuk menyalakan bukalah daftar services windows baik dari task manager atau dari menu run (tekan tombol Windows+R) lalu ketik 'services.msc'. Saat sudah membuka services yang ada pada windows scroll ke bawah hingga sampai pada SQL Server services seperti yang ditunjukkan gambar di bawah ini. Lalu tekan "Start the services" apabila ia tidak dalam kondisi "Running".
+			<img class="articleimg" src="images/artikel2_java_img3.png" alt="gambar3">
+			<br><br>
+			
+			<h2>Konfigurasi TCP/IP SQL server pada kondisi disabled</h2>
+			<p>Untuk memeriksa apakah masalah yang ditemui adalah ini,
+			pertama-tama carilah "SQL Server Configuration Manager" pada komputer anda. Lalu buka dan periksa bagian yang ada pada gambar di bawah ini<br>
+			<img class="articleimg" src="images/artikel2_java_img4.png" alt="gambar4">
+			<br>
+			Apabila TCP/IP dalam kondisi disabled maka klik 2 kali dan ubah agar ia menjadi enabled.
+			<br><br>
+			
+			<h2>Mode authentikasi SQL server belum dinyalakan</h2>
+			<p>Untuk mengatasi masalah ini maka bukalah SQL Server Management Studio (ssms) lalu klik kanan pada server anda (kotak sebelah kiri pada gambar di bawah) lalu pilih properties<br>
+			<img class="articleimg" src="images/artikel2_java_img5.png" alt="gambar5">
+			<br>
+			Di dalam window properties klik pada bagian security lalu pastikan mode authentikasi yang digunakan oleh sql server adalah "SQL Server and Windows authentication" seperti yang ditandai pada bagian kanan gambar.
+			<br><br>
+			
+			<h2>Port number yang digunakan tidak tepat.</h2>
+			<p>Untuk mengatasi masalah ini pertama-tama periksalah PID dari process SQL server dengan task manager. Lalu buka command prompt dan ketiklah "netstat -ano". Pada output command prompt carilah PID proses sql server<br>
+			<img class="articleimg" src="images/artikel2_java_img6.png" alt="gambar6">
+			<br>
+			Nomor port yang seharusnya anda gunakan adalah seperti angka yang diberi kotak pada gambar di atas. Jika sudah didapatkan maka gantilah nomor port pada kode java anda dengan nomor port ini.
+		</div>
+		<div id="sideNav">
+			<ul>
+				<li>
+					<a href="Halaman_Utama.html"> Halaman Utama</a>
+					</li>
+				<li>
+					<a href="Daftar_Artikel.html"> Artikel</a>
+				</li>
+				<ul class="secondlevel">
+					<li>
+						<a href="Artikel_1.html"> Tips Error Java: jdbc - Cannot open database. Login failed</a>
+					</li>
+					<li>
+						<a href="Artikel_2.html"> Tips Error Java: jdbc - TCP/IP connection has failed</a>
+					</li>
+				</ul>
+			</ul>
+		
+		</div>
+	</div>
+	<footer>
+		<p>
+		Kelompok 2 IMK<br>
+		Hubungi Kami:<br>
+		No Telp: 12345678910<br>
+		Email  : contact@tkp.co.id<br>
+	</footer>
+</body>
