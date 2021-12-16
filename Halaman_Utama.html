@@ -1,16 +1,14 @@
-<!-- HTML HALAMAN UTAMA /-->
-<!DOCTYPE html>
-<html>
-
+<!doctype=html>
+<html lang="id">
 <head>
-	<meta charset="utf-8">
-	<title>Halaman Utama</title>
-	<!--link rel="stylesheet" href="style_utama.css"!-->
-
+	<title> Artikel</title>
+	<link rel="stylesheet" href="Stylesheet.css">
 </head>
 
-<body>
-	<div class="container">
+<Body>
+	<div id="banner"><!--
+	-->
+		<div class="container">
 		<div class="header">
 			<div class="logo">
 				<img src="images/logo.png" width="125">
@@ -20,112 +18,47 @@
 				<h1>Tips Komputer dan Programming</h1>
 			</div>
 
-			<div class="navigasi">
-				<ul>
-					<li><a href="Halaman_Utama.html"><strong>Halaman Utama</strong></a></li>
-					<li><a href="Daftar_artikel.html"><strong>Daftar Artikel</strong></a></li>
-				</ul>
-				<hr>
-			</div>
-
-		</div>
-
+			<div id="TopNavigation">
+				<a style="color:white;" class="navButton" href="Halaman_Utama.html">Halaman Utama</a>
+				<a style="color:white;" class="navButton" href="Daftar_artikel.html">Daftar artikel
+				</a>
+	</div>
 
 		<div class="body cf">
-			<div class="homepage">
-				<h><strong>HOMEPAGE</strong></h>
+			<div class="Homepage">
+				<h1>HOMEPAGE</h1>
 				<p>Tips Komputer Programming adalah website untuk untuk menyelesaikan masalah atau error yang ditemui saat melakukan pemrograman dan saat menggunakan komputer. Biasanya untuk menyelesaikan masalah atau error yang ditemui, pengguna akan mencari solusi di internet. Salah satu situs web yang populer dan sering dikunjungi adalah Stackoverflow. Namun, pada situs web ini seringkali pengguna kesulitan untuk menemukan solusi dari permasalahan atau error yang ditemui karena solusi yang sangat banyak dan beragam. Selain itu, faktor bahasa, juga menjadi hambatan pengguna dalam memahami solusi dari permasalahan atau error yang ditemui. Diharapkan dengan fitur-fitur yang dimiliki situs web kami, nantinya situs web kami bisa memberi solusi termudah dari masalah atau error yang ditemui pengguna dan pengguna bisa lebih memahami solusi tersebut dalam bahasa Indonesia.
 				</p>
 			</div>
-			<div class="sidebar">
-				<h><strong>SIDEBAR</strong></h>
-				<ul>
-					<li><a href="Halaman_Utama.html">Halaman Utama</a></li>
-					<li><a href="Daftar_artikel.html">Daftar Artikel</a></li>
+			<div id="sideNav">
+			<ul>
+				<li>
+					<a href="Halaman_Utama.html"> Halaman Utama</a>
+					</li>
+				<li>
+					<a href="Daftar_artikel.html"> Artikel</a>
+				</li>
+				<ul class="secondlevel">
+					<li>
+						<a href="Artikel_1.html"> Tips Error Java: jdbc - Cannot open database. Login failed</a>
+					</li>
+					<li>
+						<a href="Artikel_2.html"> Tips Error Java: jdbc - TCP/IP connection has failed</a>
+					</li>
 				</ul>
-			</div>
-		</div>
-
-		<div class="footer">
-			<p>
-				Kelompok 2 IMK<br>
-				Hubungi Kami:<br>
-				No Telp: 12345678910<br>
-				Email  : contact@tkp.co.id<br>
-			</p>
+			</ul>
+		
 		</div>
 	</div>
+		<footer>
+		<p>
+		<img src="images/logo_filkom.png" class="logo2">
+		Universitas Brawijaya<br>
+		Teknik Informatika<br>
+		Fakultas Ilmu Komputer<br>
+		<br>
+		Kelompok 2 IMK<br>
+		No Telp: 12345678910<br>
+		Email  : contact@tkp.co.id<br>
+	</footer>
 </body>
-
-<!-- CSS HALAMAN UTAMA -->
-<style type="text/css">
-body{
-	font:  16px/28px arial, sans-serif;
-	background-image: url(images/body_image.png);
-}
-
-.container{
-	width: 960px;
-	margin: auto;
-	background-color: white;
-}
-
-.logo{
-	width: 140px;
-	height: 132.3px;
-	padding: 21px;
-	float: left;
-	box-sizing: border-box;
-	background-color: #A9A9A9;
-}
-
-.judul {
-	font-size: 24px;
-	font-weight: bold;
-	width: 780px;
-	padding: 20px;
-	float: left;
-	background-color: #A9A9A9;
-}
-
-.navigasi ul li{
-	display: inline-block;
-	margin-top: 15px;
-	margin-right: 5px;
-}
-
-.homepage{
-	width: 700px;
-	padding: 20px;
-	float: left;
-	box-sizing: border-box;
-}
-
-.sidebar{
-	width: 220px;
-	padding: 20px;
-	float: left;
-}
-
-.footer{
-	padding: 20px;
-	text-align: center;
-	background-color: grey;
-}
-
-/* clearfix */
-.cf:before,
-.cf:after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
-}
-
-.cf:after {
-	clear: both;
-}
-
-.cf {
-	*zoom: 1;
-}
-</style>
-</html>
